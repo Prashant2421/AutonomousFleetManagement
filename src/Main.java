@@ -8,7 +8,7 @@ public class Main {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "Prashant@123");
             System.out.println(con);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
 
         }
     }
