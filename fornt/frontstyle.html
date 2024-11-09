@@ -70,25 +70,26 @@
 <body>
 
 <header>
-    <h1>Vehicle Management Service</h1>
-    <p>Your one-stop solution for vehicle tracking and management</p>
+    <h1>Autonomous vehicle management System</h1>
+    <p>This is the smart way to know about your Vehicle</p>
 </header>
 
 <nav>
     <a href="#register">Register Vehicle</a>
-    <a href="#maintenance">Maintenance Logs</a>
+    <a href="#maintenance">Maintenance Basic info</a>
     <a href="#login">Login</a>
+    <a href="#Recived Details">Car Recived Details</a></a>
 </nav>
 
 <div class="container">
     <section id="register" class="form-section">
-        <h2>Register a Vehicle</h2>
+        <h2>Register a Vehicle Details</h2>
         <form action="#" method="post">
             <label for="vehicle-id">Vehicle ID:</label>
             <input type="text" id="vehicle-id" name="vehicle-id" placeholder="Enter Vehicle ID" required>
 
-            <label for="vehicle-make">Vehicle Make:</label>
-            <input type="text" id="vehicle-make" name="vehicle-make" placeholder="Enter Vehicle Make" required>
+            <label for="Vehicle Company name">Vehicle Company name:</label>
+            <input type="text" id="Vehicle Company name" name="Vehicle Company name" placeholder="Enter Vehicle Company name" required>
 
             <label for="vehicle-model">Vehicle Model:</label>
             <input type="text" id="vehicle-model" name="vehicle-model" placeholder="Enter Vehicle Model" required>
@@ -107,13 +108,13 @@
     </section>
 
     <section id="maintenance" class="form-section">
-        <h2>Vehicle Maintenance Logs</h2>
+        <h2>Vehicle Maintenance basic info </h2>
         <form action="#" method="post">
             <label for="vehicle-id-log">Vehicle ID:</label>
             <input type="text" id="vehicle-id-log" name="vehicle-id-log" placeholder="Enter Vehicle ID" required>
 
             <label for="maintenance-date">Maintenance Date:</label>
-            <input type="date" id="maintenance-date" name="maintenance-date" required>
+            <input type="date" id="maintenance-date:" name="maintenance-date" required>
 
             <label for="service-type">Service Type:</label>
             <select id="service-type" name="service-type">
@@ -121,10 +122,11 @@
                 <option value="tire-replacement">Tire Replacement</option>
                 <option value="engine-check">Engine Check</option>
                 <option value="brake-service">Brake Service</option>
+                <option value ="full-wiring-check">Wiring check</option>
             </select>
 
             <label for="service-details">Service Details:</label>
-            <textarea id="service-details" name="service-details" rows="4" placeholder="Enter Service Details" required></textarea>
+            <textarea id="service-details" name="service-details" rows="4" placeholder="Enter other  Service Details" required></textarea>
 
             <button type="submit" class="button">Submit Maintenance Log</button>
         </form>
@@ -142,11 +144,18 @@
             <button type="submit" class="button">Login</button>
         </form>
     </section>
+    <section id="Recived Details" class="form-section">
+        <h2>Recived Details</h2>
+        <form action="#" method="post">
+            <label for="Username">Username:</label>
+            <input type="text" id="username:" name="username" placeholder="Enter Username" required>
+            <label for="maintenance-date">Maintenance Date(customer visit on show room):</label>
+            <input type="date" id="maintenance-date" name="maintenance-date" required>
+            <label for ="Recived-date"> Recived Date:</label>
+            <input type="date"id="Recived-date" name="Recived-date" required>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
 </div>
-
-<footer style="background-color: #333; color: #fff; text-align: center; padding: 10px; position: absolute; width: 100%; bottom: 0;">
-    <p>&copy; 2024 Vehicle Management Service. All rights reserved.</p>
-</footer>
-
 </body>
 </html>
