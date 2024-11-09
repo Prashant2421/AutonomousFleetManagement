@@ -2,9 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vehicle Management Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            margin-top: 0;
+        }
+        input[type="text"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    <h1>Vehicle Management Service</h1>
+    <p>Your one-stop solution for vehicle tracking and management</p>
+</header>
+
+<nav>
+    <a href="#register">Register Vehicle</a>
+    <a href="#maintenance">Maintenance Logs</a>
+    <a href="#login">Login</a>
+</nav>
+
+<div class="container">
+    <section id="register" class="form-section">
+        <h2>Register a Vehicle</h2>
+        <form action="#" method="post">
+            <label for="vehicle-id">Vehicle ID:</label>
+            <input type="text" id="vehicle-id" name="vehicle-id" placeholder="Enter Vehicle ID" required>
+
+            <label for="vehicle-make">Vehicle Make:</label>
+            <input type="text" id="vehicle-make" name="vehicle-make" placeholder="Enter Vehicle Make" required>
+
+            <label for="vehicle-model">Vehicle Model:</label>
+            <input type="text" id="vehicle-model" name="vehicle-model" placeholder="Enter Vehicle Model" required>
+
+            <label for="manufacture-date">Manufacture Date:</label>
+            <input type="date" id="manufacture-date" name="manufacture-date" required>
+
+            <label for="owner-name">Owner Name:</label>
+            <input type="text" id="owner-name" name="owner-name" placeholder="Enter Owner Name" required>
+
+            <label for="owner-contact">Owner Contact:</label>
+            <input type="number" id="owner-contact" name="owner-contact" placeholder="Enter Owner Contact Number" required>
+
+            <button type="submit" class="button">Register Vehicle</button>
+        </form>
+    </section>
+
+    <section id="maintenance" class="form-section">
+        <h2>Vehicle Maintenance Logs</h2>
+        <form action="#" method="post">
+            <label for="vehicle-id-log">Vehicle ID:</label>
+            <input type="text" id="vehicle-id-log" name="vehicle-id-log" placeholder="Enter Vehicle ID" required>
+
+            <label for="maintenance-date">Maintenance Date:</label>
+            <input type="date" id="maintenance-date" name="maintenance-date" required>
+
+            <label for="service-type">Service Type:</label>
+            <select id="service-type" name="service-type">
+                <option value="oil-change">Oil Change</option>
+                <option value="tire-replacement">Tire Replacement</option>
+                <option value="engine-check">Engine Check</option>
+                <option value="brake-service">Brake Service</option>
+            </select>
+
+            <label for="service-details">Service Details:</label>
+            <textarea id="service-details" name="service-details" rows="4" placeholder="Enter Service Details" required></textarea>
+
+            <button type="submit" class="button">Submit Maintenance Log</button>
+        </form>
+    </section>
+
+    <section id="login" class="form-section">
+        <h2>User Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </section>
+</div>
+
+<footer style="background-color: #333; color: #fff; text-align: center; padding: 10px; position: absolute; width: 100%; bottom: 0;">
+    <p>&copy; 2024 Vehicle Management Service. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
